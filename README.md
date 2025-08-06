@@ -4,7 +4,7 @@ Python code samples for OpenAI's gpt-oss model on Azure OpenAI.
 
 ## Overview
 
-This repository contains Python sample code for interacting with the gpt-oss-120b model deployed on Azure AI Foundry. The gpt-oss model is OpenAI's reasoning model that provides transparent access to its reasoning process.
+This repo contains Python sample code for interacting with the gpt-oss-120b model deployed on Azure AI Foundry. The gpt-oss models are OpenAI's open weight models that provide transparent access to its reasoning process.
 
 ## Prerequisites
 
@@ -14,9 +14,9 @@ This repository contains Python sample code for interacting with the gpt-oss-120
 
 ## Deployment Guide
 
-Follow these steps to deploy and use the gpt-oss model:
+Follow these steps to deploy and use the gpt-oss-120b model:
 
-### Step 1: Deploy an Azure AI Foundry Project
+### Step 1: Deploy an Azure AI Foundry Project*
 
 Deploy an Azure AI Foundry Project in one of the supported regions:
 - `eastus`
@@ -25,6 +25,8 @@ Deploy an Azure AI Foundry Project in one of the supported regions:
 - `uksouth`
 - `westcentralus`
 - `westeurope`
+
+\* Other regions/project types may be available, I personally tested this using a Foundry Project in UK South.
 
 📖 **Detailed instructions**: [Create Azure AI Foundry Projects](https://learn.microsoft.com/azure/ai-foundry/how-to/create-projects?tabs=ai-foundry&pivots=fdp-project)
 
@@ -96,27 +98,17 @@ Both samples will:
 2. Display the model's reasoning process
 3. Show the final response
 
-## Sample Code Features
+# Why are there two sets of samples? Which API version should I use?
+Starting in May 2025, you can now opt in to our next generation of v1 Azure OpenAI APIs which add support for:
+- Ongoing access to the latest features with no need to update api-version each month.
+- OpenAI client support with minimal code changes to swap between OpenAI and Azure OpenAI when using key-based authentication.
 
-### chat-basic-aoai.py (Legacy API)
-- Uses the `AzureOpenAI` client from the OpenAI Python SDK
-- Connects via the standard Azure OpenAI endpoint
-- API version: `2025-04-01-preview`
+Code samples have been provided for both the v1 API Preview, and also the older API versions. The v1 API Preview samples have a v1.py suffix to distinguish them.
 
-### chat-basic-aoai-v1.py (V1 Preview API)
-- Uses the standard `OpenAI` client with Azure base URL
-- Connects via the v1 preview endpoint
-- Provides access to the latest API features
+If you want the latest features, I would recommend using the v1 API Preview, with the `api-version` set to `preview`.
+If you need a stable, GA version, and don't need the latest features, then you can use the older API. At time of writing, the latest GA API release is `2024-10-21`.
 
-## Environment Variables Reference
-
-| Variable | Description | Required | Example |
-|----------|-------------|----------|---------|
-| `AZURE_OPENAI_API_ENDPOINT` | Azure OpenAI endpoint (legacy) | Yes | `https://myproject.openai.azure.com/` |
-| `AZURE_OPENAI_V1_API_ENDPOINT` | Azure OpenAI v1 endpoint | Yes | `https://myproject.openai.azure.com/openai/v1/` |
-| `AZURE_OPENAI_API_KEY` | Azure OpenAI API key | Yes | `abc123...` |
-| `AZURE_OPENAI_API_MODEL` | Model deployment name | No (default: gpt-oss-120b) | `gpt-oss-120b` |
-| `AZURE_OPENAI_API_VERSION` | API version | No (default: 2025-04-01-preview) | `2025-04-01-preview` |
+[Azure OpenAI in Azure AI Foundry Models API lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/openai/api-version-lifecycle?tabs=key#api-evolution)
 
 ## Troubleshooting
 
