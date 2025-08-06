@@ -25,7 +25,7 @@ Deploy an Azure AI Foundry Project in one of the supported regions:
 - `westcentralus`
 - `westeurope`
 
-\* Other regions/project types may be available, I personally tested this using a Foundry Project in UK South.
+\* According to Microsoft Learn, [gpt-oss will eventually be available in all regions](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#gpt-oss). At time of testing, these are the regions I could find it. I personally tested this using a Foundry Project in UK South.
 
 📖 **Detailed instructions**: [Create Azure AI Foundry Projects](https://learn.microsoft.com/azure/ai-foundry/how-to/create-projects?tabs=ai-foundry&pivots=fdp-project)
 
