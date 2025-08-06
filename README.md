@@ -1,6 +1,5 @@
 # Deploy gpt-oss-120b on Azure OpenAI
-
-Python code samples for OpenAI's gpt-oss model on Azure OpenAI.
+<img width="719" height="633" alt="gpt-oss" src="https://github.com/user-attachments/assets/a9bb27cb-c851-478d-a102-d03554edcbeb" />
 
 ## Overview
 
@@ -81,7 +80,12 @@ Replace `<your-resource-group>` and `<foundry-resource-name>` with your actual v
 
 ### Step 4: Run the Sample Code
 
-Choose one of the Python samples based on your preferred API:
+Choose one of the Python samples:
+
+#### Gradio example (see above screenshot)
+```bash
+python chat-gradio-aoai.py
+```
 
 #### Legacy Azure OpenAI API
 ```bash
@@ -92,11 +96,6 @@ python chat-basic-aoai.py
 ```bash
 python chat-basic-aoai-v1.py
 ```
-
-Both samples will:
-1. Send a simple chat message to the gpt-oss model
-2. Display the model's reasoning process
-3. Show the final response
 
 # Why are there two sets of samples? Which API version should I use?
 Starting in May 2025, you can now opt in to our next generation of v1 Azure OpenAI APIs which add support for:
