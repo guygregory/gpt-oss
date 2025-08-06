@@ -1,0 +1,5 @@
+# Azure OpenAI Python SDK
+openai>=1.99.1
+
+# Environment variable management
+python-dotenv>=1.0.0
