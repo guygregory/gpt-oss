@@ -26,11 +26,11 @@ This repo contains Python sample code for interacting with the gpt-oss-120b mode
 
 Follow these steps to deploy and use the gpt-oss-120b model:
 
-### Step 1: Deploy an Azure AI Foundry Project*
+### Step 1: Deploy an Azure AI Foundry Project
 
 Deploy an Azure AI Foundry Project if you don't already have one available.
 
-\* According to Microsoft Learn, [gpt-oss will eventually be available in all regions](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#gpt-oss). At time of testing, these are the regions I could find it. I personally tested this using a Foundry Project in UK South.
+[gpt-oss is available in all regions](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#gpt-oss). I personally tested this using a Foundry Project in UK South.
 
 📖 **Detailed instructions**: [Create Azure AI Foundry Projects](https://learn.microsoft.com/azure/ai-foundry/how-to/create-projects?tabs=ai-foundry&pivots=fdp-project)
 
