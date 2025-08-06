@@ -5,6 +5,7 @@ This guide explains how to run `gpt-oss-120b` on **Azure AI Foundry**, and how t
 
 - [Run gpt-oss-120b on Azure OpenAI](#deploy-gpt-oss-120b-on-azure-openai)
 - [Run gpt-oss-20b on Foundry Local](#run-gpt-oss-20b-on-foundry-local)
+- [Useful Links](#useful-links)
 
 ---
 
@@ -164,6 +165,26 @@ foundry model run gpt-oss-20b
 - Foundry Local is ideal for local development, offline prototyping, or sandbox testing
 - If you get the error `Exception: Model <gpt-oss-20b> was not found in the catalog or local cache.`, check your PC meets the 16GB NVIDIA requirement, and you are running version 0.6 or above.
 - Works well for basic chat and reasoning tasks if your hardware meets the requirements
+
+# Useful Links
+
+Here are some useful links related to gpt-oss:
+
+## Announcements
+- **OpenAI Announcement**: [OpenAI Open Models](http://openai.com/open-models)
+- **Microsoft Announcement**: [OpenAI's Open-Source Model gpt-oss on Azure AI Foundry and Windows AI Foundry](https://azure.microsoft.com/blog/openais-open%E2%80%91source-model-gpt%E2%80%91oss-on-azure-ai-foundry-and-windows-ai-foundry/)
+
+## Documentation
+- **Azure Region Availability**: [gpt-oss Model Availability](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#gpt-oss)
+- **Run gpt-oss-20b on Foundry Local**: [Get Started Guide](https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started#run-the-latest-openai-open-source-model)
+- **Model Card**: [gpt-oss Model Card (PDF)](https://cdn.openai.com/pdf/419b6906-9da6-406c-a19d-1bb078ac7637/oai_gpt-oss_model_card.pdf)
+
+## Code and Platforms
+- **Code Samples**: [This Repository](https://aka.ms/gpt-oss)
+- **HuggingFace**: [gpt-oss Collection](https://huggingface.co/collections/openai/gpt-oss-68911959590a1634ba11c7a4)
+- **Ollama**: [gpt-oss Library](https://ollama.com/library/gpt-oss)
+- **GitHub**: [OpenAI gpt-oss Repository](https://github.com/openai/gpt-oss)
+- **Playground**: [gpt-oss.com](https://gpt-oss.com/)
 
 ---
 
