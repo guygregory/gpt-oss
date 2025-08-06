@@ -1,3 +1,14 @@
+# Run OpenAI gpt-oss Models on Azure OpenAI and Foundry Local
+This guide explains how to run `gpt-oss-120b` on **Azure AI Foundry**, and how to run `gpt-oss-20b` using **Foundry Local**.
+
+## Table of Contents
+
+- [Run gpt-oss-120b on Azure OpenAI](#deploy-gpt-oss-120b-on-azure-openai)
+- [Run gpt-oss-20b on Foundry Local](#run-gpt-oss-20b-on-foundry-local)
+
+---
+
+
 # Deploy gpt-oss-120b on Azure OpenAI
 <img width="719" height="633" alt="gpt-oss" src="https://github.com/user-attachments/assets/a9bb27cb-c851-478d-a102-d03554edcbeb" />
 
@@ -117,6 +128,44 @@ If you need a stable, GA version, and don't need the latest features, then you c
 - Check the [Azure AI Foundry documentation](https://learn.microsoft.com/azure/ai-foundry/)
 - Review Azure OpenAI service logs in the Azure portal
 - Verify your deployment status in the Azure AI Foundry project
+
+# Run gpt-oss-20b on Foundry Local
+
+If you want to experiment with the `gpt-oss-20b` model locally without using Azure, you can use [**Foundry Local**.](https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started#run-the-latest-openai-open-source-model)
+
+## Requirements
+
+- **NVIDIA GPU** with at least **16 GB VRAM**
+- **Foundry Local version 0.6.0 or above**
+
+Check your version with:
+
+```bash
+winget list --id Microsoft.FoundryLocal
+```
+
+Update to the latest version (if needed):
+
+```bash
+winget upgrade Microsoft.FoundryLocal
+```
+
+## Run the Model
+
+```bash
+foundry model run gpt-oss-20b
+```
+
+> 💡 Note: This will download several GBs of model weights if not already cached.
+
+## Notes
+
+- Documentation for running `gpt-oss-20b` on Foundry Local can be found [here](https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started#run-the-latest-openai-open-source-model)
+- Foundry Local is ideal for local development, offline prototyping, or sandbox testing
+- If you get the error `Exception: Model <gpt-oss-20b> was not found in the catalog or local cache.`, check your PC meets the 16GB NVIDIA requirement, and you are running version 0.6 or above.
+- Works well for basic chat and reasoning tasks if your hardware meets the requirements
+
+---
 
 ## License
 
