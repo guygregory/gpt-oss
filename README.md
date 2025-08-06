@@ -97,7 +97,7 @@ python chat-basic-aoai.py
 python chat-basic-aoai-v1.py
 ```
 
-# Why are there two different APIs? Which should I use?
+## Why are there two different APIs? Which should I use?
 Starting in May 2025, you can now opt in to our next generation of v1 Azure OpenAI APIs which add support for:
 - Ongoing access to the latest features with no need to update api-version each month.
 - OpenAI client support with minimal code changes to swap between OpenAI and Azure OpenAI when using key-based authentication.
