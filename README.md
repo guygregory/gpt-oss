@@ -139,7 +139,7 @@ If you want to experiment with the `gpt-oss-20b` model locally without using Azu
 ## Requirements
 
 - **NVIDIA GPU** with at least **16 GB VRAM**
-- **Foundry Local version 0.6.0 or above**
+- **Foundry Local version 0.6.87 or above**
 
 Check your version with:
 
@@ -165,7 +165,7 @@ foundry model run gpt-oss-20b
 
 - Documentation for running `gpt-oss-20b` on Foundry Local can be found [here](https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started#run-the-latest-openai-open-source-model)
 - Foundry Local is ideal for local development, offline prototyping, or sandbox testing
-- If you get the error `Exception: Model <gpt-oss-20b> was not found in the catalog or local cache.`, check your PC meets the 16GB NVIDIA requirement, and you are running version 0.6 or above.
+- If you get the error `Exception: Model <gpt-oss-20b> was not found in the catalog or local cache.`, check your PC meets the 16GB NVIDIA requirement, and you are running version 0.6.87 or above. Reboot your PC after upgrading.
 - Works well for basic chat and reasoning tasks if your hardware meets the requirements
 
 # Useful Links
