@@ -30,7 +30,7 @@ Follow these steps to deploy and use the gpt-oss-120b model:
 
 Deploy an Azure AI Foundry Project if you don't already have one available.
 
-[gpt-oss is available in all regions](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#gpt-oss). I personally tested this using a Foundry Project in UK South.
+According to Microsoft Learn Docs, [gpt-oss is available in all regions](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#gpt-oss). I personally tested this using a Foundry Project in UK South.
 
 📖 **Detailed instructions**: [Create Azure AI Foundry Projects](https://learn.microsoft.com/azure/ai-foundry/how-to/create-projects?tabs=ai-foundry&pivots=fdp-project)
 
