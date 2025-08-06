@@ -4,7 +4,7 @@ Python code samples for OpenAI's gpt-oss model on Azure OpenAI.
 
 ## Overview
 
-This repo contains Python sample code for interacting with the gpt-oss-120b model deployed on Azure AI Foundry. The gpt-oss models are OpenAI's open weight models that provide transparent access to its reasoning process.
+This repo contains Python sample code for interacting with the gpt-oss-120b model deployed on Azure AI Foundry using Chat Completions. The gpt-oss models are OpenAI's open weight models that provide transparent access to its reasoning process.
 
 ## Prerequisites
 
