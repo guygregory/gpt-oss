@@ -45,6 +45,8 @@ Deploy the gpt-oss-120b model using one of the following methods:
 3. Search for and select "gpt-oss-120b"
 4. Click "Deploy" and follow the deployment wizard
 
+<img width="635" height="222" alt="image" src="https://github.com/user-attachments/assets/284b8f48-25d4-415e-a12d-c326645c73a7" />
+
 #### Option B: Azure CLI
 ```bash
 az cognitiveservices account deployment create \
