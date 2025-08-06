@@ -184,7 +184,7 @@ Here are some useful links related to gpt-oss:
 - **HuggingFace**: [gpt-oss Collection](https://huggingface.co/collections/openai/gpt-oss-68911959590a1634ba11c7a4)
 - **Ollama**: [gpt-oss Library](https://ollama.com/library/gpt-oss)
 - **GitHub**: [OpenAI gpt-oss Repository](https://github.com/openai/gpt-oss)
-- **Playground**: [gpt-oss.com](https://gpt-oss.com/)
+- **Playground (OpenAI)**: [gpt-oss.com](https://gpt-oss.com/)
 
 ---
 
