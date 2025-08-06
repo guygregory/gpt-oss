@@ -1,4 +1,4 @@
-# gpt-oss
+# Deploy gpt-oss-120b on Azure OpenAI
 
 Python code samples for OpenAI's gpt-oss model on Azure OpenAI.
 
