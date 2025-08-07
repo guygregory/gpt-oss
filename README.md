@@ -1,4 +1,4 @@
-# Run OpenAI gpt-oss Models on Azure OpenAI and Foundry Local
+# Run OpenAI gpt-oss Models in Azure AI Foundry and Foundry Local
 This guide explains how to run `gpt-oss-120b` on **Azure AI Foundry**, and how to run `gpt-oss-20b` using **Foundry Local**.
 
 ## Table of Contents
